@@ -17,7 +17,7 @@ class readFile{
 		
 		void parseRom(){
 			int i = 512;
-			printf("Rom transferida...");
+			printf("Rom transferida..."); // debug
 			while(1){
 				switch(rom[i] << 8 | rom[i + 1]){
 					case 0x6A:
@@ -62,7 +62,7 @@ class readFile{
 				buff = (char *)malloc(alocSize);
 				
 				if(buff == NULL){
-					printf("Erro ao alocar file na memória.");
+					printf("Erro ao alocar arquivo na memÃ³ria.");
 				}
 				else
 				{
@@ -78,7 +78,7 @@ class readFile{
 					if(rom != NULL)
 						parseRom();
 							else
-						printf("Erro ao transferir memória!");
+						printf("Erro ao transferir memÃ³ria!");
 				}
 			}
 			
