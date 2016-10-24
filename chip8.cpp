@@ -39,7 +39,7 @@ class readFile{
 		{
 			fileName = N;
 				if(fileName.length() == 0)
-				printf("Nenhum arquivo foi especificado.");
+				printf("Nenhum arquivo foi especificado!");
 			else{
 				printf("%s", fileName.c_str());
 			}
